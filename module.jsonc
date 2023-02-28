@@ -1,0 +1,42 @@
+{
+	"schema" 	  : "1.0.0",
+	"schema_type" : "module",
+	"type"  	  : "included", /* included | remote  - included means all source files are whithin this zip folder*/
+	"name"  	  : "example", /* module name must be the same as the static folder */
+	"rep"   	  : "https://github.com/siktec-lab/bsik-module", /* also used by remote type */
+	"ver"   	  : "1.0.1",
+	"title" 	  : "Developer Tools",
+	"description" : "Module example - Bootstrap template",
+	"author" : {
+		"name" 	: "SIKTEC - Shlomo Hassid",
+		"email" : "siktec.lab@gmail.com",
+		"about" : "SIKTEC core developer",
+		"web" 	: "https://siktec.net"
+	},
+	"menu" : {
+		// "text": "Developer",
+		"title": "Example",
+		"desc":  "Example module",
+		"icon":  "code",
+		"action": "example",
+		"order": 5,
+		"sub": [
+		]
+	},
+	"tables_prefix" : "m_example",
+	"depends" : [
+		{ "module"  : "core", "version" : ">=1.0.1" }
+	],
+	"require"		: {
+		"php": ">=8.0.0",
+		"twbs/bootstrap": "^5.0.0"
+	},
+    "autoload": {
+        "classmap": [
+			"lib/"
+        ]
+        // "psr-4" : {
+		// 	"Example\\": "src/"
+        // }
+    }
+}

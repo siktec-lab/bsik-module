@@ -1,7 +1,11 @@
-/vendor/
 .env
 .vscode
 php_errors.log
-*.zip
+/vendor/
+/node_modules/
 /temp/
 composer.lock
+/logs/*
+bsik_m_temp*
+cache/
+!**/.keepin
